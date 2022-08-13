@@ -7,7 +7,7 @@ const fotoNavlist = require('./multimedia/navlist.png');
 function Header(){
   return(
     <header className=
-      'flex w-full fixed top-0 bg-color-secundary z-10 shadow-[-1px_5px_20px_1px_rgba(0,0,0,0.75)]'>
+      'flex w-full fixed top-0 bg-gradient-to-r from-indigo-900 to-violet-900 to z-10 shadow-[-1px_5px_20px_1px_rgba(0,0,0,0.75)]'>
 		  <div className=
         'w-full h-full relative'>
 		  <nav className=

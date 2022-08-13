@@ -11,7 +11,7 @@ function Footer (){
           <LayoutFooter typeOfClassName='imgLogo' typeOfImg={'imglogo'}  altImg='imagenHeader' />
           <LayoutFooter typeOfClassName='imgDesplegableMenu' typeOfImg={'imgnavlist'} altImg='imagenDesplegableMenu' />
         </div>	
-        <div>
+        <div className='flex flex-wrap justify-center mb-3'>
           <LinksFooter textOftag={'Informacion'} />
           <LinksFooter textOftag={'documentacion'} />
           <LinksFooter textOftag={'contacto'} />

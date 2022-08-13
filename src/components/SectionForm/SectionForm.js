@@ -5,7 +5,7 @@ import FormComponent from './FormComponent';
 function SectionForm(){
   return(
     <div className=
-      'flex justify-center items-center bg-color-secundary p-6 my-14 shadow-[-1px_0px_14px_1px_rgba(0,0,0,0.75)]'>
+      'flex justify-center items-center  bg-blue-700/25  p-6 my-14 shadow-[-1px_0px_14px_1px_rgba(0,0,0,0.75)]'>
     <div className=
       'w-full flex justify-center items-center lg:flex-row lg:justify-start' >
       <p className=
