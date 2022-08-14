@@ -8,7 +8,7 @@ const imgJavascript = require('../../components/multimedia/javascript.png');
 const imgPython = require('../../components/multimedia/python.png'); 
 const imgGithub = require('../../components/multimedia/github.png'); 
 const imgTailwind = require('../../components/multimedia/tailwind.png'); 
-const imgReact = require('../../components/multimedia/tailwind.png'); 
+const imgReact = require('../../components/multimedia/react.png'); 
 
 /*styles */
 const styleSectionSkills = 'flex flex-col bg-blue-700/25 justify-center shadow-[-1px_0px_14px_1px_rgba(0,0,0,0.75)]';

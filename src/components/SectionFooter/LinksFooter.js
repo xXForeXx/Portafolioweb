@@ -7,7 +7,7 @@ const styleLinksContainerLink = 'm-3 text-white font-medium hover:text-cyan-400 
 function LinksFooter({textOftag}){
  return(
   <div className={styleLinksContainer} id="menuFooter">
-      <span href="http://" class={styleLinksContainerLink} >{textOftag}</span>          
+      <span href="http://" className={styleLinksContainerLink} >{textOftag}</span>          
   </div>
  )
 }

@@ -31,10 +31,10 @@ function Aside ({href}){
 
   //return component 
   return (
-    <aside class={styleAside}  onClick={handleClickChangeAside}>
-      <div class={styleAsideContainer}>
-      <img src={imgAside} alt="foto BD" class={styleAsideContainerImg} />
-      <div class={styleAsideContainerList} id="menuAside">
+    <aside className={styleAside}  onClick={handleClickChangeAside}>
+      <div className={styleAsideContainer}>
+      <img src={imgAside} alt="foto BD" className={styleAsideContainerImg} />
+      <div className={styleAsideContainerList} id="menuAside">
         <AsideComponent  name={'Facebook'} hrefBlank={'https://www.facebook.com/daniel.florez.37669'} srcImg={imgFacebook} />
         <AsideComponent  name={'Twitter'} hrefBlank={'https://twitter.com/DanielFlorezVa1'} srcImg={imgTwitter} />
         <AsideComponent  name={'Github'} hrefBlank={'https://github.com/xXForeXx'} srcImg={imgGithub} />

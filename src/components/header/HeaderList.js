@@ -11,8 +11,8 @@ function HeaderList (){
   return(
     <ul className={styleNavList} id='listNav'>
 				  <HeaderItem text='Inicio' link='./index.html'/>
+					<HeaderItem text='Bloc' link='./index.html' />
 					<HeaderItem text='Portafolio' link='./index.html' />
-					<HeaderItem text='Multimedia' link='./index.html' />
 					<HeaderItem text={<button className={styleButton} > Contactame</button> }  link="./contact.html"/>
 		</ul>
   )

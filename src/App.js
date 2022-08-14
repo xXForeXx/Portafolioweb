@@ -1,6 +1,6 @@
 
-import Header from "./components/header/Header";
-import SectionDevelopment from "./components/SectionDevelopment";
+import Header from "./components/Header/Header";
+import SectionDevelopment from "./components/SectionDevelopment/SectionDevelopment";
 import SectionSkills from "./components/SectionSkills/SectionSkills";
 import SectionArticle from "./components/SectionArticle/SectionArticle";
 import SectionForm from "./components/SectionForm/SectionForm";
@@ -11,7 +11,7 @@ import Footer from "./components/SectionFooter/Footer";
 
 function App (){
   return(
-    <div>
+    <>
       <Header />
       <SectionDevelopment />
       <SectionSkills />
@@ -19,7 +19,7 @@ function App (){
       <SectionForm />
       <Aside />
       <Footer />
-    </div>
+    </>
   )
 }
 
