@@ -16,13 +16,22 @@ const imgLinkedin= require('../../components/multimedia/linkedinlogo.png');
 const styleAside = 'flex flex-col justify-center items-center w-16 h-16 fixed top-56 right-1 rounded-full hover:bg-color-secundary hover:border-2 hover:border-cyan-600 hover:-translate-x-1  duration-300 ease-linear sm:w-20 sm:h-20' ;
 const styleAsideContainer = 'relative flex flex-col justify-center items-center' ;
 const styleAsideContainerImg = 'w-16' ;
-const styleAsideContainerList = 'flex flex-col items-center absolute top-14 rounded-full'; 
+const styleAsideContainerList = 'hidden flex-col items-center absolute mt-1.5 top-16 rounded-full'; 
 
 
 function Aside ({href}){
+  
+  //fuction click
+  const handleClickChangeAside = ()=>{
+  if(document.querySelector('#menuAside').style.display === 'flex'){
+    document.querySelector('#menuAside').style.display = 'none'
+  } else{
+    document.querySelector('#menuAside').style.display = 'flex'}
+  }
 
+  //return component 
   return (
-    <aside class={styleAside}  onclick>
+    <aside class={styleAside}  onClick={handleClickChangeAside}>
       <div class={styleAsideContainer}>
       <img src={imgAside} alt="foto BD" class={styleAsideContainerImg} />
       <div class={styleAsideContainerList} id="menuAside">

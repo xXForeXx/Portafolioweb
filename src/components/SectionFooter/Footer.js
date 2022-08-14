@@ -1,23 +1,39 @@
-import '../../style/Tailwind.css';
-
 import LinksFooter from './LinksFooter';
 import LayoutFooter from './LayoutFooter';
 
+/*styles */
+const styleFooter = 'flex flex-col justify-around items-center bg-slate-800 shadow-[-1px_5px_20px_1px_rgba(0,0,0,0.75)]';
+const styleFooterImgContainer = 'w-full my-3 flex flex-row justify-around items-center';
+const styleFooterLinksContainer = 'hidden flex-wrap justify-center mb-3'; 
+const styleFooterP = 'text-center text-cyan-800 bg-black ';
 
+
+/////Events 
+const handleClickDesMenu = ()=>{
+  if(document.querySelector('#footerNavList').style.display === 'flex'){
+    document.querySelector('#footerNavList').style.display = 'none';
+  } else {
+    document.querySelector('#footerNavList').style.display = 'flex';
+  }
+};
+
+const handleClickBloc = ()=>console.log('redireccion al bloc');
+
+////component
 function Footer (){
   return(
-    <footer className="flex flex-col justify-around items-center bg-slate-800 shadow-[-1px_5px_20px_1px_rgba(0,0,0,0.75)]">
-        <div className="w-full my-3 flex flex-row justify-around items-center">
-          <LayoutFooter typeOfClassName='imgLogo' typeOfImg={'imglogo'}  altImg='imagenHeader' />
-          <LayoutFooter typeOfClassName='imgDesplegableMenu' typeOfImg={'imgnavlist'} altImg='imagenDesplegableMenu' />
+    <footer className={styleFooter}>
+        <div className={styleFooterImgContainer}>
+          <LayoutFooter typeImg='imgLogo' altImg='imagenHeader' Event={handleClickBloc}/>
+          <LayoutFooter typeImg='imgDesMenu' altImg='imagenDesplegableMenu'  Event={handleClickDesMenu}/>
         </div>	
-        <div className='flex flex-wrap justify-center mb-3'>
+        <div className={styleFooterLinksContainer} id='footerNavList'>
           <LinksFooter textOftag={'Informacion'} />
           <LinksFooter textOftag={'documentacion'} />
           <LinksFooter textOftag={'contacto'} />
           <LinksFooter textOftag={'multimedia'} />
         </div>
-      <div class="text-center text-cyan-800 bg-black ">
+      <div class={styleFooterP}>
         <p>Creado con el ♥</p>
       </div>
     </footer>

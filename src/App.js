@@ -1,5 +1,5 @@
 
-import Header from "./components/Header";
+import Header from "./components/header/Header";
 import SectionDevelopment from "./components/SectionDevelopment";
 import SectionSkills from "./components/SectionSkills/SectionSkills";
 import SectionArticle from "./components/SectionArticle/SectionArticle";
